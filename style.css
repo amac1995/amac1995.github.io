@@ -1,0 +1,258 @@
+
+/*-- Iphone X Remove Gutters --*/
+html{
+  padding: env(safe-area-inset);
+}
+
+/*-- Prevent Horizontal Scrolling & Font Style --*/
+html, body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+  /*background-color: #e0dfdf;*/
+}
+
+.text-andre {
+  color: #b3b2b2;
+}
+
+/* Navbar Scroll Offset */
+.offset:before{
+  height: 4rem;
+  margin-top: -4rem;
+  content: "";
+  display: block;
+}
+
+
+
+/*========= Navegacao ============*/
+
+.navbar{
+  padding:  1rem 3rem; /* trocar por 1 é o normal*/
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  transition: background-color .5s ease 0s;
+
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+
+.fa-bars:before{
+  color: #b3b2b2;
+  font-size: 2rem;
+}
+
+.navbar-nav li{
+  padding-right: 1rem;
+}
+
+.navbar-nav .nav-link{
+  color: #b3b2b2;
+  padding-top: .8rem;
+}
+
+/* Cor das letras do separador do menu em que estamos */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #e0dfdf;
+}
+
+.custom-toggler-icon {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.navbar.solid {
+  /*Força a propriedade descrita na linha a baixo*/
+  background: rgba(77, 77, 77, 0.9)!important;
+  transition: background-color 1s ease 0s;
+}
+
+/*============== Imagem de Capa ==============*/
+
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.home-inner {
+  background-image: url('img/image.jpg');
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  display: table;
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+}
+.caption h1 {
+  color: white;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 2rem;
+}
+
+/*===========================
+            5.ABOUT
+=============================*/
+
+.section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  background-color: #fff;
+}
+
+.about-social li a {
+  color: #000;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid #d4d4d4;
+  line-height: 40px;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.about-social li a:hover {
+  color: #298ee7;
+  border-color: #298ee7;
+}
+
+
+/*===========================
+           Portfolio
+=============================*/
+
+.portfolio-column {
+  background-color: white;
+  height: 100%;
+  padding: 1.6rem;
+  border-top: .25rem solid #1EBBA3;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
+  transition: transform .7s ease;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-column:hover {
+  transform: scale(1.1);
+}
+.portfolio-column h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/*============= CONTACTO =============*/
+
+footer {
+  background: url('img/con') no-repeat;
+  /*background-color: #40474e;*/
+  background-size: cover;
+  color: white;
+}
+footer .row {
+  background-color: rgba(57, 63, 70, 0.85);
+  padding: 1rem 2rem 3rem;
+}
+footer img {
+  height: 2rem;
+  margin: 1.5rem 0;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover {
+  color: #1ebba3!important;
+}
+footer h3 {
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+/*--- Contact Form --*/
+.form-group {
+  margin-bottom: 1.3rem;
+}
+.form-control {
+  background-color: #53595f;
+  border-radius: 0;
+  border: .15rem solid #666b71;
+  color: white!important;
+  font-size: 1.1rem;
+}
+.form-control:focus {
+  background: #53595f;
+  border: .15rem solid #666b71;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b2b5b8!important;
+}
+input.btn {
+  cursor: pointer;
+}
+hr.socket {
+  border-top: .2rem solid #666b71;
+  width: 100%;
+}
+
+
+
+/*============= TOP SCROLL =============*/
+
+.fa-angle-up:before {
+  font-size: 3rem;
+  height: 1.7rem;
+  color: #2a8aeb;
+  background: white;
+}
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: .3;
+  z-index: 1000;
+  display: none;
+}
+
+
