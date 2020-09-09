@@ -165,7 +165,7 @@ html, body{
   background-color: white;
   height: 100%;
   padding: 1.6rem;
-  border-top: .25rem solid #1EBBA3;
+  border-top: .25rem solid #b3b2b2;
   box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
   transition: transform .7s ease;
   position: relative;
