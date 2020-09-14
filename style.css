@@ -181,62 +181,53 @@ html, body{
 
 /*============= CONTACTO =============*/
 
-footer {
-  background: url('img/con') no-repeat;
-  /*background-color: #40474e;*/
+.footer {
+  /*background: url('img/con') no-repeat;*/
+  background-color: #40474e;
   background-size: cover;
   color: white;
 }
-footer .row {
-  background-color: rgba(57, 63, 70, 0.85);
+.row.outer {
+  background-color: rgba(77, 77, 77, 0.9);
   padding: 1rem 2rem 3rem;
 }
-footer img {
+.footer img {
   height: 2rem;
   margin: 1.5rem 0;
 }
-footer a {
-  color: white;
+.footer a,
+.footer ul.social li a {
+   color: white;
 }
-footer svg.svg-inline--fa {
-  font-size: 1.6rem;
-  margin: 1.2rem .5rem 0 0;
-}
-footer svg.svg-inline--fa:hover {
-  color: #1ebba3!important;
-}
-footer h3 {
+.footer h3 {
   text-transform: uppercase;
   margin: 1.5rem 0;
 }
+
+
 /*--- Contact Form --*/
 .form-group {
   margin-bottom: 1.3rem;
 }
 .form-control {
-  background-color: #53595f;
+  background-color: #707070;
   border-radius: 0;
   border: .15rem solid #666b71;
   color: white!important;
   font-size: 1.1rem;
 }
 .form-control:focus {
-  background: #53595f;
+  background-color: #707070;
   border: .15rem solid #666b71;
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder {
   color: #b2b5b8!important;
 }
-input.btn {
-  cursor: pointer;
-}
 hr.socket {
   border-top: .2rem solid #666b71;
   width: 100%;
 }
-
-
 
 /*============= TOP SCROLL =============*/
 
