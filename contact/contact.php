@@ -6,7 +6,7 @@ THIS FILE USES PHPMAILER INSTEAD OF THE PHP MAIL() FUNCTION
 
 use PHPMailer\PHPMailer\PHPMailer;
 
-require './PHPMailer-Andre/vendor/autoload.php';
+require 'contact/PHPMailer-Andre/vendor/autoload.php';
 
 /*
 *  CONFIGURE EVERYTHING HERE
@@ -17,8 +17,8 @@ $fromEmail = $_POST['email'];
 $fromName = $_POST['name'];
 
 // an email address & name that will receive the email with the output of the form
-$sendToEmail = 'andre.correia.87.ac@gmail.com';
-$sendToName = 'André';
+$sendToEmail = 'andre_correia_87@hotmail.com';
+$sendToName = 'Andre';
 
 // subject of the email
 $subject = 'New message from contact form';
